@@ -1,0 +1,5 @@
+- config:
+    max_value: 100
+    max_weight: 100
+    num: 2
+  name: Knapsack

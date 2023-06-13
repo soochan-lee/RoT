@@ -1,0 +1,30 @@
+---
+
+# Model
+model: 'Transformer'
+d_model: 128
+nhead: 2
+dim_feedforward: 256
+num_layers: 4
+dropout: 0.0
+
+# Training
+amp: False
+batch_size: 256
+length_budget: 4194304  # 256 ** 2 * 64
+eval_length_budget: 16777216  # 256 ** 2 * 256
+max_train_steps: 500000
+eval_data_size: 30000
+num_workers: 8
+device: cuda
+optim: Adam
+optim_args:
+  lr: 0.001
+lr_sched: StepLR
+lr_sched_args:
+  step_size: 50000
+  gamma: 0.5
+summary_interval: 250
+num_wrong_summary: 20
+eval_interval: 20000
+ckpt_interval: 10000

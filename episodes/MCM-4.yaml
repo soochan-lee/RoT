@@ -1,0 +1,4 @@
+- config:
+    max_digits: 2
+    num: 4
+  name: MCM

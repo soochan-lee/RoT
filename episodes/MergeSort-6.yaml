@@ -1,0 +1,4 @@
+- config:
+    max_digits: 3
+    max_terms: 6
+  name: MergeSort

@@ -1,0 +1,17 @@
+name: rot
+channels:
+  - defaults
+  - pytorch
+  - conda-forge
+dependencies:
+  - python=3.10
+  - cudatoolkit=11.3
+  - matplotlib
+  - tensorboard=2.10
+  - pytorch=1.12.1
+  - torchtext
+  - tqdm
+  - pyyaml
+  - jupyter
+  - ipdb
+  - transformers

@@ -1,0 +1,3 @@
+- config:
+    digits: 13
+  name: LCS
